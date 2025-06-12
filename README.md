@@ -10,7 +10,7 @@ The **Agentic Coupler** came out of development project for creating long form b
 
 I tried unsuccessfully to create a supervisor architecture and eventually settled on an agentic workflow because I couldn't get reliable routing. During the process of running experiments on various architectures, I created an Agentic Coupler 🔗 that separates routing from inference. The coupler connects (or "couples") the user request to the appropriate team member and just provides the suggestion.  
 
-My code used the suggestion to send the request to the team member along with any additional data or state.  I imagine this is how frameworks work behind the scenes.  My Agentic Coupler 🔗 had a better routing success rate with one interesting side effect...
+My code then used the suggestion to send the request to the team member along with any additional data or state.  I imagine this is how frameworks work behind the scenes.  I ended up with better routing success with one interesting side effect...
 
 I was also able to explicitly define the state sent to each team member instead of relying on the supervisor set the context.  Here's why that matters.  When writing a book, some agents rely on the synopsis while others change the working draft.  Some steps also need locational context like where is this text within the chapter. The state graph became extensive reminding me of when we passed around huge context objects.
 
