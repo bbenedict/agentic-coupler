@@ -6,7 +6,7 @@ agentic_coupler.add_team_member("SALES", "handles all sales from new leads to cl
 agentic_coupler.add_team_member("FINANCE", "manages all financial accounts and processes all incoming and outgoing money")
 
 # Set the team manager as the default for any request that can't be coupled with an existing team member
-# agentic_coupler.add_team_member("TEAM_MANAGER", "makes all management decisions", True)
+agentic_coupler.add_team_member("TEAM_MANAGER", "makes all management decisions", True)
 
 request = """
 Start a new marketing campaign to emphasize we use only organic
