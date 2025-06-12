@@ -20,14 +20,3 @@ coupled_team_members = agentic_coupler(request)
 print(request)
 for team_member in coupled_team_members:
     print(f"{team_member.user_request} -- sent to -- {team_member.team_member_id}({team_member.confidence})")
-
-    print(team_member.model_dump_json(indent=4))
-
-"""
-** Sample output ***
-
-Start a new marketing campaign to emphasize we use only organic materials -- sent to -- MARKETING
-Have our sales people emphasize organic food and material when talking to any new leads -- sent to -- SALES
-Make sure the controller adds a new account to track the revenue for this campaign -- sent to -- FINANCE
-Let's train all the customer support people on our organic products -- sent to -- TEAM_MANAGER
-"""
